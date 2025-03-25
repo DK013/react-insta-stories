@@ -72,6 +72,7 @@ export const renderer: Renderer = ({
             muted={muted}
             autoPlay
             webkit-playsinline="true"
+            crossOrigin="anonymous"
           />
           {!loaded && (
             <div
