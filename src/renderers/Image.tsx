@@ -20,7 +20,7 @@ export const renderer: Renderer = ({ story, action, isPaused, config }) => {
     <WithHeader {...{ story, globalHeader: config.header }}>
       <WithSeeMore {...{ story, action }}>
         <div>
-          <img style={computedStyles} src={story.url} onLoad={imageLoaded} />
+          <img style={computedStyles} src={story.url} onLoad={imageLoaded} crossOrigin="anonymous" />
           {!loaded && (
             <div
               style={{
